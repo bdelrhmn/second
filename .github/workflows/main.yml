@@ -30,4 +30,4 @@ jobs:
           run: docker build -t abdo1111/myimage .
   
         - name: 'Push Docker Image'
-          run: docker push abdo1111/myimage
+          run: docker push abdo1111/myimage:latest
