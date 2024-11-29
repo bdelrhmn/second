@@ -24,10 +24,10 @@ jobs:
           run: ls
 
         - name: 'Login to Docker'
-          run: docker login --username abdo1111 --password dckr_pat_AIUTpTZQv1YK1c_3pG3ynoKPAd4
+          run: docker login --username ${{secrets.USERNAME}} --password ${{secrets.TOKEN}}
   
         - name: 'Building Docker Image'
-          run: docker build -t abdo1111/myimage .
+          run: docker build -t ${{secrets.USERNAME}}/myimage .
   
         - name: 'Push Docker Image'
-          run: docker push abdo1111/myimage:latest
+          run: docker push ${{secrets.USERNAME}}/myimage:latest
