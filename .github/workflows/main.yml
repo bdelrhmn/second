@@ -22,3 +22,6 @@ jobs:
 
         - name: 'print files'
           run: ls
+
+        - name: 'login'
+          run: docker login --username abdo1111 --password dckr_pat_qb6xgHo1wDJHEKsQl1fdgRuAyb8
