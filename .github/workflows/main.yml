@@ -17,3 +17,8 @@ jobs:
   
         - name: 'Testing printing'
           run: echo abdoo
+
+        - uses: Actions/checkout@v3
+
+        - name: 'print files'
+          run: ls
