@@ -24,7 +24,7 @@ jobs:
           run: ls
 
         - name: 'Login to Docker'
-          run: docker login --username abdo1111 --password ${{secrets.DOCKER_TOKEN}}
+          run: docker login --username abdo1111 --password dckr_pat_WGMm67z4w482IN--LfaQNtgMsk4
   
         - name: 'Building Docker Image'
           run: docker build -t abdo1111/myimage .
